@@ -1,0 +1,37 @@
+preprocessing:
+  log_transform_target: false # logaritmicá úprava na výstupné dáta, pre normalizáciu dát
+
+model:
+  hidden_layers:
+    1:
+      layer_size: 64
+      activation_function: "ReLU" # ReLU, Tanh, Sigmoid, ELU, LeakyReLU...
+
+    2:
+      layer_size: 64
+      activation_function: "ReLU"
+
+
+  # názorné pridanie 3. vrstvy
+  # 3:
+  #   layer_size: 16
+  #   activation_function: Sigmoid
+
+
+training:
+  num_epochs: 50
+  batch_size: 64
+
+optimizer:
+  type: "Adam" # SDG, SGD Momentum, Adam
+
+  sgd_config:
+    learning_rate: 0.03
+
+  sgd_momentum_config:
+    learning_rate: 0.01
+    momentum: 0.9
+
+  adam_config:
+    learning_rate: 0.001
+

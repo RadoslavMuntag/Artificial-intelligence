@@ -1,0 +1,6 @@
+{
+    "size": [7, 7],
+    "start_position": [3, 6],
+    "treasure_count": 5,
+    "treasure_coordinates": [[4, 1], [2, 2], [6, 3], [1, 4], [4, 5]]
+}
